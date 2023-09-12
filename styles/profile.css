@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #8A2BE2, #4B0082); /* Degrade roxo */
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: #333;
+}
+
+.form-group {
+    margin: 10px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4B0082;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #8A2BE2;
+}
