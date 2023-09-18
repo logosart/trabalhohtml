@@ -9,18 +9,20 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0; /* Cor de fundo cinza claro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
-/* Estilos para o contêiner principal */
-.container {
-    width: 80%;
-    max-width: 400px;
-    margin: 0 auto;
+/* Estilos para o contêiner de login */
+.login-container {
     background-color: #fff; /* Cor de fundo branca */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
-    margin-top: 10%;
+    text-align: center;
 }
 
 /* Estilos para o título */
@@ -28,6 +30,11 @@ h1 {
     font-size: 24px;
     margin-bottom: 20px;
     color: #333; /* Cor do texto preto */
+}
+
+/* Estilos para o formulário */
+form {
+    text-align: left;
 }
 
 /* Estilos para os campos do formulário */
@@ -43,17 +50,16 @@ label {
 }
 
 input[type="text"],
-input[type="email"] {
+input[type="password"] {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc; /* Cor da borda cinza claro */
     border-radius: 4px;
     font-size: 16px;
-    margin-top: 5px;
 }
 
-/* Estilos para o botão Salvar */
-button {
+/* Estilos para o botão Entrar */
+button[type="submit"] {
     background-color: #007bff; /* Cor de fundo azul */
     color: #fff; /* Cor do texto branco */
     border: none;
@@ -63,6 +69,6 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+button[type="submit"]:hover {
     background-color: #0056b3; /* Cor de fundo azul mais escura ao passar o mouse */
 }
