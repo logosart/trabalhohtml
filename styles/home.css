@@ -1,65 +1,77 @@
-body {
+/* Reset de estilos para remover margens e preenchimentos padrão */
+* {
     margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background: #4B0082; /* Cor roxo escuro */
-    color: #fff;
+    padding: 0px;
+    box-sizing: border-box;
+    
 }
 
+/* Estilos para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Cor de fundo cinza claro */
+    
+    
+}
+
+/* Estilos para o cabeçalho */
 header {
+    background-color: #007bff; /* Cor de fundo azul */
+    color: #fff; /* Cor do texto branco */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgba(0, 0, 0, 0.5);
     padding: 10px 20px;
 }
 
 .profile {
     display: flex;
     align-items: center;
+    gap: 10px;
 }
-
-
 
 .profile img {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
-    margin-right: 10px;
-}
-
-.image img{
-    align-items: center;
-    width: 500px;
-    height: 300px;
-    border-radius: 10%;
     
 }
 
 .btn {
-    background: #8A2BE2; /* Cor roxo mais claro */
-    color: #fff;
-    padding: 10px 20px;
     text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease-in-out;
+    color: #fff; /* Cor do texto branco */
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
 }
 
 .btn:hover {
-    background: #9400D3; /* Cor roxo mais escuro no hover */
+    background-color: #0056b3; /* Cor de fundo azul mais escura ao passar o mouse */
 }
 
-main {
-    padding: 20px;
-    text-align: center;
-}
-
+/* Estilos para o título */
 h1 {
     font-size: 24px;
-    color: #fff;
+    margin-top: 20px;
+    color: #333; /* Cor do texto preto */
+    margin: 20px;
 }
 
+/* Estilos para o texto principal */
 p {
-    font-size: 18px;
-    color: #fff;
+    font-size: 16px;
+    color: #555; /* Cor do texto cinza escuro */
+    margin: 20px;
+}
+
+/* Estilos para a imagem */
+.image img {
+    max-width: 50%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    
+    
 }
